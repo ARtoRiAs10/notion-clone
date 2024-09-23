@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { useMutation } from "convex/react";
 import { ChevronsLeft, MenuIcon, Plus, PlusCircle, Search, Settings, Trash } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
-import { ElementRef, MouseEvent, useEffect, useRef, useState } from "react";
+import { ElementRef, useEffect, useRef, useState } from "react";
 import { toast } from 'sonner';
 import { useMediaQuery } from "usehooks-ts";
 import { DocumentList } from "./document-list";
@@ -40,7 +40,7 @@ export const Navigation = () => {
 
 
     const handleMouseDown = (
-        event: MouseEvent<HTMLDivElement, MouseEvent>
+        event: React.MouseEvent<HTMLDivElement>
     ) => {
         event.preventDefault();
         event.stopPropagation();
