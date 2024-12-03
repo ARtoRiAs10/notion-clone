@@ -32,6 +32,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 Link live website : 
+```
+https://notion-clone-blush-nu.vercel.app/
+```
 
 ```https://notion-clone-blush-nu.vercel.app/
 ```
