@@ -34,6 +34,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 Link live website : 
 
 
-```
-https://notion-clone-blush-nu.vercel.app/
-```
+[website_link](https://notion-clone-blush-nu.vercel.app/)
