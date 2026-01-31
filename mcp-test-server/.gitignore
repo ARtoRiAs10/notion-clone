@@ -1,6 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+# MCP Test Server (local dev only)
+mcp-test-server/node_modules/
+mcp-test-server/*.tsbuildinfo
+.cursor/mcp.json
+/tmp/notion-clone*/
+
+
 /node_modules
 /.pnp
 .pnp.js
@@ -8,7 +15,7 @@
 
 # testing
 /coverage
-.env
+
 # next.js
 /.next/
 /out/

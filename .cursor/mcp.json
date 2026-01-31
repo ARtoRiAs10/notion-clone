@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "notion-test": {
+      "command": "npm",
+      "args": ["run", "start"],
+      "cwd": "./mcp-test-server",
+      "env": {}
+    }
+  }
+}

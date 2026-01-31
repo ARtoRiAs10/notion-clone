@@ -1,0 +1,10 @@
+---
+description: React + TypeScript best practices for Notion Clone
+globs: ["src/**/*.{ts,tsx}"]
+alwaysApply: false
+---
+# React Component Standards
+- Use functional components with TypeScript
+- Always use data-testid attributes
+- Prefer composition over inheritance
+- Extract custom hooks for logic > 20 lines

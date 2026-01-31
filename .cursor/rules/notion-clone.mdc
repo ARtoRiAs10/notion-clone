@@ -1,0 +1,10 @@
+---
+description: Notion Clone specific patterns
+globs: ["**/*.{ts,tsx}"]
+alwaysApply: true
+---
+# Notion Clone Guidelines
+- Components follow Notion design: clean, minimal, keyboard-navigable
+- Use SVG icons from icons.tsx
+- Real-time collaboration: optimistic updates + WebSocket fallbacks
+- Block-based architecture: every element is a draggable block

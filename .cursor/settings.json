@@ -1,0 +1,6 @@
+{
+  "mcpServers": ["notion-test"],
+  "experimental": {
+    "mcpAutoAttach": true
+  }
+}

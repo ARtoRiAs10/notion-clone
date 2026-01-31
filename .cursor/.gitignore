@@ -1,0 +1,5 @@
+# MCP Test Server (local dev only)
+mcp-test-server/node_modules/
+mcp-test-server/*.tsbuildinfo
+.cursor/mcp.json
+/tmp/notion-clone*/
