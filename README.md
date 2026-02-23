@@ -1,37 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Jotion — Notion Clone
 
-## Getting Started
+A full-featured, real-time Notion clone built with **Next.js 14**, **TypeScript**, **Convex**, and **Tailwind CSS**. Jotion replicates the core Notion experience — nested documents, rich-text editing, cover images, custom icons, and live collaboration — all in a clean, dark-mode-friendly interface.
 
-First, run the development server:
+🌐 **Live Demo:** [notion-clone-blush-nu.vercel.app](https://notion-clone-blush-nu.vercel.app)
+
+---
+
+## ✨ Features
+
+- 📄 **Infinite Nested Documents** — Create pages within pages just like Notion
+- ✏️ **Rich-Text Editor** — Block-based editor with full text formatting support
+- 🖼️ **Cover Images & Icons** — Personalize every document with emojis and banners
+- 🗑️ **Trash & Restore** — Soft-delete with full restore capability
+- 🔄 **Real-Time Sync** — Powered by Convex for live, multi-tab data updates
+- 🔐 **Authentication** — Secure sign-in via Clerk
+- 🌑 **Dark Mode** — Fully themed with `next-themes`
+- 📱 **Responsive Design** — Works seamlessly on desktop and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript |
+| Database / Real-time | Convex |
+| Authentication | Clerk |
+| Styling | Tailwind CSS + shadcn/ui |
+| Deployment | Vercel |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+- A [Convex](https://convex.dev) account
+- A [Clerk](https://clerk.com) account
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone the repository
+git clone https://github.com/ARtoRiAs10/notion-clone.git
+cd notion-clone
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+CONVEX_DEPLOYMENT=your_convex_deployment_url
+NEXT_PUBLIC_CONVEX_URL=your_convex_public_url
 
-## Learn More
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key
+CLERK_SECRET_KEY=sk_test_your_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Run the Development Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Start Convex backend
+npx convex dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# In a new terminal, start Next.js
+npm run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-Link live website : 
+---
 
+## 📁 Project Structure
 
-[website_link](https://notion-clone-blush-nu.vercel.app/)
+```
+notion-clone/
+├── app/                  # Next.js App Router pages & layouts
+├── components/           # Reusable UI components
+│   ├── editor/           # Rich-text editor components
+│   ├── modals/           # Cover image, icon, confirm dialogs
+│   └── ui/               # shadcn/ui base components
+├── convex/               # Convex schema, queries & mutations
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+└── public/               # Static assets
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the [Apache-2.0 License](./LICENSE).
